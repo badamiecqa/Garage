@@ -15,8 +15,8 @@ public class motorboat extends vehicle {
 	}
 	
 	@Override
-	public float costOfRepair() {
-		return 1200.50F;
+	public int costOfRepair() {
+		return (1200 + (getDeckArea()*20));
 	}
 	
 	public int getDeckArea() {

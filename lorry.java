@@ -17,8 +17,13 @@ private boolean hasCargo;
 	}
 	
 	@Override
-	public float costOfRepair() {
-		return 500.90F;
+	public int costOfRepair() {
+		int init = 500;
+		if(hasCargo) { init += 700;
+			
+		} else {init += 50;}
+		
+		return init;
 	}
 
 	public int getLorrylength() {

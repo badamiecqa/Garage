@@ -1,25 +1,25 @@
 package main;
 
 public class vehicle {
-	
+
 	private int vehWeight;
 	private int noOfWindows;
 	private String colour;
-	
+
 	public vehicle() {
 		super();
 	}
-	
+
 	public vehicle(int vehWeight, int noOfWindows, String colour) {
 		super();
 		this.vehWeight = vehWeight;
 		this.noOfWindows = noOfWindows;
 		this.colour = colour;
 
-}
-	
-	public float costOfRepair() {
-		return 50.00F;
+	}
+
+	public int costOfRepair() {
+		return 50;
 	}
 
 	public int getVehWeight() {
@@ -45,7 +45,5 @@ public class vehicle {
 	public void setColour(String colour) {
 		this.colour = colour;
 	}
-	
+
 }
-	
-	

@@ -17,8 +17,8 @@ public class helicopter extends vehicle {
 		}
 		
 		@Override
-		public float costOfRepair() {
-			return 2500.00F;
+		public int costOfRepair() {
+			return (2500 + (getNoOfBlades() *  500) ) ;
 		}
 
 		public int getNoOfBlades() {
@@ -37,9 +37,5 @@ public class helicopter extends vehicle {
 			this.hasParachutes = hasParachutes;
 		}
 	
-	
-	
-	
-	
-
 }
+
